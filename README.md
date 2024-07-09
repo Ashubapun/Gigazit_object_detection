@@ -9,6 +9,7 @@ This script detects rectangular and circular objects in an image, calculates the
 - NumPy
 
 3. Approach
+
 3.1. Image Preprocessing:
    - Convert the image to grayscale.
    - Apply GaussianBlur to reduce noise.
