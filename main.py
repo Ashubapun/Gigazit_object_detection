@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Load the image
-image_path = 'C:\Users\Ashutosh Das\OneDrive\Desktop\Gigazit\image.jpg'
+image_path = 'C:/Users/Ashutosh Das/OneDrive/Desktop/Gigazit/image.jpg'
 image = cv2.imread(image_path)
 
 # Convert the image to grayscale
@@ -44,7 +44,7 @@ for contour in contours:
 #         cv2.circle(image, (x, y), r, (255, 0, 0), 2)
 
 # Display the result
-cv2_imshow(image)
+cv2.imshow("Detected Objects ", image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
@@ -63,6 +63,6 @@ for i, (area, (x, y, w, h)) in enumerate(rectangle_areas):
 #     print(f"  Surface Area: {area:.2f} square pixels")
 
 # Save the output image with rectangles and circles drawn
-output_path = 'C:\Users\Ashutosh Das\OneDrive\Desktop\Gigazit'
+output_path = 'C:/Users/Ashutosh Das/OneDrive/Desktop/Gigazit'
 cv2.imwrite(output_path, image)
 print(f"Output image saved to {output_path}")
